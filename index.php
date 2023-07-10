@@ -14,11 +14,11 @@ $product4 = new Food ('Mangime per Pesci Guppy in Fiocchi', 'Pesce', 'Prezzo: �
 
 $product5 = new Item ('Voliera Wilma in Legno', 'Uccello', 'Prezzo: € 184,99', 'Materiale: Legno', 'Dimensioni: M: L 83 x P 67 x H 153 cm.');
 
-$product6 = new Item ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso: 500 gr', 'Ingredienti: Prosciutto, Riso');
+$product6 = new Item ('Cartucce Filtranti per Filtro EasyCrystal', 'Pesce', 'Prezzo: € 2,29', 'Materiale: Materiale Espanso', 'Dimensioni: ND');
 
-$product7 = new Game ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso: 500 gr', 'Ingredienti: Prosciutto, Riso');
+$product7 = new Game ('Kong Classic', 'Cane', 'Prezzo: € 13,49', 'Caratteristiche: Galleggia e rimbalza', 'Dimensioni: 8,5 cm x 10 cm');
 
-$product8 = new Game ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso: 500 gr', 'Ingredienti: Prosciutto, Riso');
+$product8 = new Game ('Topini di peluche Trixie', 'Gatto', 'Prezzo: € 4,99', 'Caratteristiche: Morbido con codina in corda', 'Dimensioni: 8,5 cm x 10 cm');
 ?>
 
 <!DOCTYPE html>
