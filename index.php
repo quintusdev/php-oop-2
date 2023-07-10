@@ -1,8 +1,40 @@
 <?php
-    require_once __DIR__."/shop/Product.php";
-    require_once __DIR__."/shop/Food.php";
-    require_once __DIR__."/shop/Game.php";
-    require_once __DIR__."/shop/Item.php";
+require_once __DIR__."/shop/Product.php";
+require_once __DIR__."/shop/Food.php";
+require_once __DIR__."/shop/Game.php";
+require_once __DIR__."/shop/Item.php";
+
+$product1 = new Food (
+    'https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg',
+    'Royal Canin Mini Adult',
+    'Cane',
+    '€ 43,99',
+    'peso: 500 gr',
+    'Ingredienti: Prosciutto, Riso'
+);
+
+$product2 = new Game (
+    'https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg',
+    'Topini di peluche Trixie',
+    'Gatto',
+    '€ 4,99',
+    'Materiale: Merda',
+    'Dimensioni: 8,5 cm X 10 cm'
+);
+
+$product3 = new Item (
+    'https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg',
+    'Topini di peluche Trixie',
+    'Gatto',
+    '€ 4,99',
+    'Materiale: Merda',
+    'Dimensioni: 8,5 cm X 10 cm'
+);
+
+echo "<pre>";
+var_dump($product1);
+var_dump($product2);
+var_dump($product3);
 
 ?>
 
@@ -22,8 +54,21 @@
     </head>
 
     <body>
+        <header class="bg-dark text-white p-5 mb-5">    
+            <h1>Negozio BoolFood</h1>
+        </header>
 
-        
+        <main class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 
 </html>
