@@ -3,39 +3,22 @@ require_once __DIR__."/shop/Product.php";
 require_once __DIR__."/shop/Food.php";
 require_once __DIR__."/shop/Game.php";
 require_once __DIR__."/shop/Item.php";
+/* PRODOTTO 1 */
+$product1 = new Food ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso Netto: 545 gr', 'Ingredienti: Prosciutto, Riso.');
 
-$product1 = new Food (
-    'https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg',
-    'Royal Canin Mini Adult',
-    'Cane',
-    '€ 43,99',
-    'peso: 500 gr',
-    'Ingredienti: Prosciutto, Riso'
-);
+$product2 = new Food ('Almo Nature Holistic Maintainance Medium Large Tonno e Riso', 'Cane', 'Prezzo: € 44,99', 'Peso Netto: 600 gr', 'Ingredienti: Manzo, Cereali.');
 
-$product2 = new Game (
-    'https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg',
-    'Topini di peluche Trixie',
-    'Gatto',
-    '€ 4,99',
-    'Materiale: Merda',
-    'Dimensioni: 8,5 cm X 10 cm'
-);
+$product3 = new Food ('Almo Nature Cat Daily Lattina', 'Gatto', 'Prezzo: € 34,99', 'Peso Netto: 400 gr', 'Ingredienti: Tonno, Pollo, Prosciutto.');
 
-$product3 = new Item (
-    'https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg',
-    'Topini di peluche Trixie',
-    'Gatto',
-    '€ 4,99',
-    'Materiale: Merda',
-    'Dimensioni: 8,5 cm X 10 cm'
-);
+$product4 = new Food ('Mangime per Pesci Guppy in Fiocchi', 'Pesce', 'Prezzo: € 2,95', 'Peso Netto: 30 gr', 'Ingredienti: Pesci e sottoprodotti dei pesci, Cereali, Lieviti, Alghe.');
 
-echo "<pre>";
-var_dump($product1);
-var_dump($product2);
-var_dump($product3);
+$product5 = new Item ('Voliera Wilma in Legno', 'Uccello', 'Prezzo: € 184,99', 'Materiale: Legno', 'Dimensioni: M: L 83 x P 67 x H 153 cm.');
 
+$product6 = new Item ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso: 500 gr', 'Ingredienti: Prosciutto, Riso');
+
+$product7 = new Game ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso: 500 gr', 'Ingredienti: Prosciutto, Riso');
+
+$product8 = new Game ('Royal Canin Mini Adult', 'Cane', 'Prezzo: € 43,99', 'Peso: 500 gr', 'Ingredienti: Prosciutto, Riso');
 ?>
 
 <!DOCTYPE html>
@@ -63,7 +46,90 @@ var_dump($product3);
                 <div class="row">
                     <div class="col-4">
                         <div class="card">
-
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img class="w-auto" src="https://www.pets-house.it/5767-large_default/royal-canin-mini-adult-800-gr.jpg" alt="Cibo per Cani">
+                            <div class="card-body">
+                                <h3><strong><?php echo $product1->description."<br>"; ?></strong></h3>
+                                <h6><i class="fa-solid fa-dog"></i><?php echo " ".$product1->type."<br>"; ?></h6>
+                                <h5><?php echo $product1->weight."<br>"; ?></h5>
+                                <h5><?php echo $product1->ingredient."<br>"; ?></h5>
+                            </div>
                         </div>
                     </div>
                 </div>
