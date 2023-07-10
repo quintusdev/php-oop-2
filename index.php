@@ -1,5 +1,8 @@
 <?php
     require_once __DIR__."/shop/Product.php";
+    require_once __DIR__."/shop/Food.php";
+    require_once __DIR__."/shop/Game.php";
+    require_once __DIR__."/shop/Item.php";
 
 ?>
 
